@@ -27,3 +27,15 @@
     int even = number.stream().filter(x->x%2==0).reduce(0,(ans,i)-> ans+i);
 
 #### Here ans variable is assigned 0 as the initial value and i is added to it .
+
+##forEach on map
+
+            Map<String, String> map = new HashMap<>();
+                map.put("C", "c");
+                map.put("B", "b");
+                map.put("Z", "z");
+                map.forEach((k, v) -> System.out.println("Key : " + k + " Value : " + v));
+                *Output*       
+                    Key : B Value : b
+                    Key : C Value : c
+                    Key : Z Value : z
